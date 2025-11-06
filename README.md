@@ -1,15 +1,9 @@
-# realiser.ai – Vercel upload (uten GitHub)
+# realiser.ai – GitHub + Vercel (fix 1)
+Dette er samme én-sideside, men med tryggere Next.js-konfig for Vercel.
+- Fjernet deprecated `experimental.appDir`
+- Ignorerer ESLint/TypeScript-feil under build (kan skrus på senere)
+- Node engines >= 18.18.0
 
-Dette prosjektet er satt opp med Next.js (app router) og TailwindCSS.
-Du kan laste opp hele mappen som en .zip direkte i Vercel: **Import Project → Upload**.
-
-## Slik gjør du
-1) Pakk denne mappen som zip (eller bruk zip-filen som fulgte med).
-2) Gå til https://vercel.com → New Project → Import Project → Upload.
-3) Last opp zip-filen.
-4) Vercel autodetekterer *Next.js* og bygger prosjektet.
-5) Når bygg er ferdig, får du en URL. Koble eventuelt til domenet `realiser.ai`.
-
-## Lokalt (valgfritt)
-- Installer: `npm install`
-- Kjør lokalt: `npm run dev` (http://localhost:3000)
+## Deploy
+1) Last opp disse filene til et GitHub-repo.
+2) I Vercel: Add New → Project → velg repo → Deploy.

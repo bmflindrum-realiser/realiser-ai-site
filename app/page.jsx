@@ -4,11 +4,9 @@ import React from "react";
 import { motion } from "framer-motion";
 import { CheckCircle2, ArrowRight, Mail, Sparkles, LineChart, Users, Waypoints, BadgeCheck } from "lucide-react";
 
-// Colors: bluegreen #0E8074, deep blue #0B2E3B, light gray #F5F7F9
-
 const features = [
   { title: "AI Gevinstkartlegging", duration: "1–2 uker", description: "Kartlegging av prosesser og arbeidsflyt for å finne én konkret oppgave der AI kan gi størst nytte.", icon: Waypoints },
-  { title: "AI Mini‑Pilot", duration: "6–8 uker", description: "Lavrisiko test på én oppgave med målt effekt (tid spart, bedre kvalitet, enklere flyt).", icon: LineChart },
+  { title: "AI Mini-Pilot", duration: "6–8 uker", description: "Lavrisiko test på én oppgave med målt effekt (tid spart, bedre kvalitet, enklere flyt).", icon: LineChart },
   { title: "Adopsjon & Skalering", duration: "4–12 uker", description: "Opplæring, rutiner og innføring av AI i teamet – slik at det faktisk tas i bruk og skaleres.", icon: Users },
 ];
 
@@ -28,11 +26,11 @@ const differentiators = [
 const Nav = () => (
   <header className="sticky top-0 z-40 backdrop-blur bg-white/70 border-b border-slate-200">
     <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-      <a href="#home" className="flex items-center gap-2 group">
+      <a href="#home" className="flex items-center gap-2 group" aria-label="realiser.ai – hjem">
         <div className="w-8 h-8 rounded-lg bg-[#0E8074]" />
         <span className="font-semibold tracking-tight text-slate-900">realiser<span className="text-[#0E8074]">.ai</span></span>
       </a>
-      <nav className="hidden md:flex items-center gap-6 text-sm">
+      <nav className="hidden md:flex items-center gap-6 text-sm" aria-label="Hovedmeny">
         <a href="#value" className="hover:text-[#0E8074]">Hvorfor oss</a>
         <a href="#services" className="hover:text-[#0E8074]">Tjenester</a>
         <a href="#process" className="hover:text-[#0E8074]">Slik jobber vi</a>
@@ -85,7 +83,7 @@ const Value = () => (
         <div>
           <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-slate-900">Broen mellom AI og arbeidshverdagen</h2>
           <p className="mt-4 text-slate-700">
-            De fleste AI‑aktører fokuserer på teknologi. Vi fokuserer på mennesker, prosess og faktisk gevinst. Der andre leverer løsninger, sikrer vi at de blir tatt i bruk.
+            De fleste AI-aktører fokuserer på teknologi. Vi fokuserer på mennesker, prosess og faktisk gevinst. Der andre leverer løsninger, sikrer vi at de blir tatt i bruk.
           </p>
           <div className="mt-6 grid gap-4">
             {differentiators.map((d, i) => (
@@ -100,9 +98,9 @@ const Value = () => (
         </div>
         <div className="rounded-3xl border border-slate-200 bg-gradient-to-br from-white to-[#F5F7F9] p-6">
           <h3 className="text-lg font-semibold text-slate-900">Målbarhet som standard</h3>
-          <p className="mt-2 text-slate-700">Vi dokumenterer før/etter‑effekt i alle prosjekter. Typiske gevinster:</p>
+          <p className="mt-2 text-slate-700">Vi dokumenterer før/etter-effekt i alle prosjekter. Typiske gevinster:</p>
           <ul className="mt-4 grid gap-3 text-sm text-slate-700">
-            <li className="flex items-start gap-2"><BadgeCheck className="w-4 h-4 mt-0.5 text-[#0E8074]"/>20–40% raskere saksbehandling</li>
+            <li className="flex items-start gap-2"><BadgeCheck classNameName="w-4 h-4 mt-0.5 text-[#0E8074]"/>20–40% raskere saksbehandling</li>
             <li className="flex items-start gap-2"><BadgeCheck className="w-4 h-4 mt-0.5 text-[#0E8074]"/>Redusert feilrate og bedre kundetilfredshet</li>
             <li className="flex items-start gap-2"><BadgeCheck className="w-4 h-4 mt-0.5 text-[#0E8074]"/>Frigjort tid til kunde og kjerneoppgaver</li>
           </ul>
@@ -149,7 +147,7 @@ const Process = () => (
             <h3 className="mt-4 text-xl font-semibold text-slate-900">{step}</h3>
             <p className="mt-2 text-slate-700">
               {i===0 && "Vi identifiserer konkrete oppgaver med høy nytte og lav risiko, og blir enige om ett fokusområde."}
-              {i===1 && "Vi kjører en mini‑pilot med tydelige måleparametre, dokumenterer effekt og justerer underveis."}
+              {i===1 && "Vi kjører en mini-pilot med tydelige måleparametre, dokumenterer effekt og justerer underveis."}
               {i===2 && "Vi trener teamet, etablerer rutiner og skalerer bruken der det gir mest verdi."}
             </p>
           </li>
@@ -164,7 +162,7 @@ const CTA = () => (
     <div className="max-w-6xl mx-auto px-4 text-center">
       <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-slate-900">Klar for første steg?</h2>
       <p className="mt-3 text-slate-700 max-w-2xl mx-auto">
-        Book en 30‑min samtale for å finne ett konkret gevinstområde i deres hverdag – helt uten forpliktelser.
+        Book en 30-min samtale for å finne ett konkret gevinstområde i deres hverdag – helt uten forpliktelser.
       </p>
       <div className="mt-6 flex flex-col sm:flex-row justify-center gap-3">
         <a href="mailto:bm@realiser.ai?subject=Interesse%20for%20AI%20Gevinstkartlegging" className="inline-flex items-center gap-2 rounded-2xl px-5 py-3 bg-[#0E8074] text-white font-medium"><Mail className="w-4 h-4"/>bm@realiser.ai</a>

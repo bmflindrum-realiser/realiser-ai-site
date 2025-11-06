@@ -1,10 +1,8 @@
-# realiser.ai – GitHub + Vercel (fix 2)
-Endringer:
-- Bruker @tailwindcss/postcss i postcss.config.js (krav i Tailwind/Next nyere versjoner)
-- next.config.mjs ryddet for gamle opsjoner
-- engines satt til Node >= 18.18.0
+# realiser.ai – Next 16 + Tailwind v4 (fix3)
+- Bruker @tailwindcss/postcss i postcss.config.js
+- globals.css importert i app/layout.jsx
+- Minimal next.config.mjs
 
 ## Deploy
-1) Last opp disse filene til GitHub-repoet.
-2) I Vercel: Add New → Project → velg repo → Deploy (eller Redeploy på eksisterende).
-
+1) Last opp ALT innholdet i denne mappen til GitHub-repoet (overskriv).
+2) Vercel bygger automatisk. Sørg for Node 18/20 i Settings.

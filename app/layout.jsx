@@ -1,9 +1,10 @@
 export const metadata = {
-  title: "realiser.ai",
-  description: "Vi hjelper virksomheter å realisere verdien av AI – gjennom små, målbare og menneskelige steg som faktisk tas i bruk.",
+  title: "realiser.ai – AI i praksis",
+  description: "Små, trygge og målbare steg som gir faktisk gevinst i arbeidshverdagen.",
+  openGraph: { title: "realiser.ai – AI i praksis", description: "Vi gjør AI praktisk, menneskelig og målbart.", url: "https://realiser.ai", siteName: "realiser.ai", locale: "nb_NO", type: "website" },
 };
 
-import "./../styles/globals.css";
+import "../styles/globals.css";
 
 export default function RootLayout({ children }) {
   return (

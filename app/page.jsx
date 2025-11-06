@@ -100,7 +100,7 @@ const Value = () => (
           <h3 className="text-lg font-semibold text-slate-900">Målbarhet som standard</h3>
           <p className="mt-2 text-slate-700">Vi dokumenterer før/etter-effekt i alle prosjekter. Typiske gevinster:</p>
           <ul className="mt-4 grid gap-3 text-sm text-slate-700">
-            <li className="flex items-start gap-2"><BadgeCheck classNameName="w-4 h-4 mt-0.5 text-[#0E8074]"/>20–40% raskere saksbehandling</li>
+            <li className="flex items-start gap-2"><BadgeCheck className="w-4 h-4 mt-0.5 text-[#0E8074]"/>20–40% raskere saksbehandling</li>
             <li className="flex items-start gap-2"><BadgeCheck className="w-4 h-4 mt-0.5 text-[#0E8074]"/>Redusert feilrate og bedre kundetilfredshet</li>
             <li className="flex items-start gap-2"><BadgeCheck className="w-4 h-4 mt-0.5 text-[#0E8074]"/>Frigjort tid til kunde og kjerneoppgaver</li>
           </ul>
